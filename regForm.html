@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Registeration Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{  
+  font-family: sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+  padding: 50px;  
+  background-color: lightblue;  
+}  
+hr {  
+  border: 1px solid #dfdcdc;  
+  margin-bottom: 25px;  
+} 
+input[type=text], input[type=password], input[type=tel], 
+input[type=email], textarea{  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display:  block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: cyan;   
+}  
+div {  
+  padding: 10px 0;  
+}     
+.btn {
+  width: 100%;  
+  background-color: #4CAF50;  
+  color: #fff;  
+  padding: 18px 0;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  opacity: 0.8;
+}  
+.btn:hover {  
+  opacity: 1;  
+}
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <!--    make a container to collect all data between it     -->
+        <div class="container">  
+        <h1 style="text-align: center;">Student Registeration Form</h1> <hr>     
+            <label>Firstname:</label>
+            <input type="text" placeholder="Firstname" size="20" required>
+            <label>Middlename:</label>
+            <input type="text" placeholder="Middlename" size="20" required>
+            <label>Lastname:</label>
+            <input type="text" placeholder="Lastname" size="20" required>
+            <label>Course:</label>
+            <select name="course" style="background: #f1f1f1; padding: 5px;">
+                <option value="course">course</option>
+                <option value="Html">Html</option>
+                <option value="css">css</option>
+                <option value="javascript">javascript</option>
+                <option value="datastructure">Datastructure</option>
+            </select>
+        <div>
+            <label>Gender:</label> <br>
+            <input type="radio" name="gender" value="male" checked>Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+        </div>
+            <label>Phone:</label>
+            <input type="tel" value="+93" size="2" placeholder="country code">
+            <input type="tel" size="10" placeholder="Phone no." required>
+            Current Address:
+            <textarea name="current address" cols="30" rows="5" placeholder="Current Address"></textarea>
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email" required>
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password" 
+            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%#?&])[A-za-z\d@!#$%?&]{8,}$" required>
+            <label>Re-type Password</label>
+            <input type="password" placeholder="Retype Password"
+            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%#?&])[A-za-z\d@!#$%?&]{8,}$" required>
+            <button type="submit" class="btn">Register</button>
+        </div>
+    </form>
+</body>
+</html>
