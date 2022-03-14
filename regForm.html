@@ -81,10 +81,10 @@ div {
             <input type="email" placeholder="Enter Email" required>
             <label>Password</label>
             <input type="password" placeholder="Enter Password" 
-            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%#?&])[A-za-z\d@!#$%?&]{8,}$" required>
+            pattern="(?=(?:[^a-zA-Z]*[a-zA-Z]){5})(?=(?:\D*\d){2})(?=.*[@#$%&]).*" required>
             <label>Re-type Password</label>
             <input type="password" placeholder="Retype Password"
-            pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%#?&])[A-za-z\d@!#$%?&]{8,}$" required>
+             pattern="(?=(?:[^a-zA-Z]*[a-zA-Z]){5})(?=(?:\D*\d){2})(?=.*[@#$%&]).*" required>
             <button type="submit" class="btn">Register</button>
         </div>
     </form>
